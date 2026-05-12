@@ -10,7 +10,7 @@ body {
   padding: 0 20px;
   line-height: 1.6;
   color: #222;
-  background: transparent; /* Prevents body from overriding html background */
+  background: rgb(18, 129, 255); 
 }  
 
 h1, h2 {
