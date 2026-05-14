@@ -10,7 +10,7 @@ body {
   color: white;
 }
 h1 {
-  font-size: 80px;
+  font-size: 75px;
   line-height: 1;
   margin-bottom: 20px;
   color: #2fbad6;
@@ -94,17 +94,9 @@ li {
 .btn-outline {
   transition: 0.3s ease;
 }
-@media (max-width: 768px) {
 
-  .container {
-    flex-direction: column;
-  }
-
-  h1 {
-    font-size: 50px;
-  }
-
-  .right {
-    padding: 40px;
-  }
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
