@@ -1,0 +1,70 @@
+/* Loader styles */
+.loader {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: #001429;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+
+  animation: fadeOut 1.5s ease forwards;
+
+  animation-delay: 2s;
+}
+
+/* Loader Text */
+.loader h1 {
+  font-size: 80px;
+  color: #2fbad6;
+
+  animation: pulse 1.5s infinite;
+}
+
+/* Hide content initially */
+.page-content {
+  opacity: 0;
+
+  animation: fadeIn 1.5s ease forwards;
+
+  animation-delay: 2s;
+}
+
+/* Fades out loader */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Fades in content */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Pulsing logo effect */
+@keyframes pulse {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
