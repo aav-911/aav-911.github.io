@@ -33,12 +33,12 @@ nav {
 
 .nav-links a {
   color: #2fbad6;
-  text-decoration: none;
   margin-left: 20px;
 }
 
 a {
   color: #2fbad6;
+  text-decoration: none;
 }
 
 .logo {
@@ -90,8 +90,7 @@ li {
   color: black;
 }
 
-.btn,
-.btn-outline {
+.btn, .btn-outline {
   transition: 0.3s ease;
 }
 
@@ -101,22 +100,45 @@ p {
   margin-bottom: 20px;
 }
 
+.hamburger-menu {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #2fbad6;
+}
+
 @media (max-width: 785px) {
-  nav{
-    padding: 12px 20px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+  nav {
+    padding: 20px;
+    position: relative;
+  }
+
+  .hamburger-menu {
+    display: block;
   }
 
   .nav-links {
-    flex-wrap: wrap;
-    gap: 15px;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #002956;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .nav-links a {
-    margin-left: 0;
-    font-size: 18px;
+    margin: 10px 0;
   }
 
   .container {
@@ -133,5 +155,5 @@ p {
     max-width: 100%;
     line-height: 1.5;
   }
-  
+
 }
