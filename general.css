@@ -100,3 +100,38 @@ p {
   line-height: 1.6;
   margin-bottom: 20px;
 }
+
+@media (max-width: 785px) {
+  nav{
+    padding: 12px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  h1{
+    font-size: 64px;
+    line-height: 0.95;
+  }
+
+  p {
+    font-size: 22px;
+    max-width: 100%;
+    line-height: 1.5;
+  }
+  
+}
