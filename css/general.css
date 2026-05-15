@@ -25,6 +25,7 @@ nav {
   align-items: center;
   padding: 14px 40px;
   background-color: #002956;
+  z-index: 1000;
 }
 
 .nav-links {
@@ -129,6 +130,7 @@ p {
     opacity: 0;
     transform: translateY(-10px);
     transition: 0.3s ease;
+    z-index: 1001;
   }
 
   .nav-links.active {
