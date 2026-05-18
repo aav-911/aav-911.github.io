@@ -1,8 +1,7 @@
-.container
-{
-    padding-top: 125px;
-    padding-left: 125px;
-    padding-right: 125px;
+.container {
+  padding-top: 125px;
+  padding-left: 125px;
+  padding-right: 125px;
 }
 h1 {
   font-size: 80px;
@@ -15,9 +14,8 @@ h1 {
     padding-left: 30px;
     padding-right: 30px;
   }
-  
+
   h1 {
     font-size: 50px;
   }
-  
 }

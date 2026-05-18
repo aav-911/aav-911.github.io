@@ -1,65 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <!------ Loading Screen Stylesheet ------>
-    <link rel="stylesheet" href="css/loadinghome.css">
+    <link rel="stylesheet" href="css/loadinghome.css" />
     <!--------- General Stylesheet --------->
-    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/general.css" />
     <!-------- HomePage Stylesheet -------->
-    <link rel="stylesheet" href="css/home.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Page Title -->
     <title>Home</title>
-    <link rel="icon" href="images/aav_logo.png" type="image/png">
-</head>
-<body>
+    <link rel="icon" href="images/aav_logo.png" type="image/png" />
+  </head>
+  <body>
     <!-- Loading Screen -->
     <div class="loader">
-        <h1>AAV</h1>
+      <h1>AAV</h1>
     </div>
     <!-- Main Content -->
     <div class="page-content">
-        <!-- Navigation Bar -->
-        <nav>
-            <div class="logo"><a href="index.html">AAV</a></div>
-            <div class="hamburger-menu" id="hamburger-menu">
-                ☰
-            </div>
+      <!-- Navigation Bar -->
+      <nav aria-label="Primary navigation">
+        <div class="logo"><a href="index.html">AAV</a></div>
+        <div class="hamburger-menu" id="hamburger-menu">☰</div>
 
-            <div class="nav-links" id="nav-links">
-                <a href="index.html">Home</a>
-                <a href="html/myProjects.html">Projects</a>
-                <a href="html/aboutMe.html">About</a>
-                <a href="html/connect.html">Connect</a>
-            </div>
-        </nav>
-        <!-- Home Page Content -->
-        <div class="container">
-            <!-- Left Side with Image -->
-            <div class="left">
-                <img src="images/grad_photo.jpg" alt="Grad Photo">
-            </div>
-            <!-- Right Side with Text -->
-            <div class="right">
-                <h1>
-                    Software Developer.<br>
-                    Game Creator.<br>
-                    Music Producer.
-                </h1>
-                <p>
-                    Hi, I'm Alex Vega — a creative developer passionate about
-                    software engineering, interactive experiences, and music production.
-                </p>
-                <!-- Buttons -->
-                <div class="buttons">
-                    <a href="html/aboutMe.html" class="btn">More about me</a>
-                    <a href="html/myProjects.html" class="btn-outline">Projects</a>
-                </div>
-            </div>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="html/myProjects.html">Projects</a>
+          <a href="html/aboutMe.html">About</a>
+          <a href="html/connect.html">Connect</a>
         </div>
+      </nav>
+      <!-- Home Page Content -->
+      <div class="scroll-container">
+        <!--Section 1: Introduction-->
+        <section class="panel section-1">
+          <!-- Left Side with Image -->
+          <div class="left">
+            <img src="images/grad_photo.jpg" alt="Grad Photo" />
+          </div>
+          <!-- Right Side with Text -->
+          <div class="right">
+            <h1>
+              Computer Programmer.<br />
+              Game Developer.<br />
+              Music Producer.
+            </h1>
+            <p>
+              Hi, I'm Alex Vega — a creative programmer passionate about writing
+              code, designing games, and producing music. I love turning ideas
+              into reality through technology and creativity.
+            </p>
+            <!-- Buttons -->
+            <div class="buttons">
+              <a href="html/aboutMe.html" class="btn">More about me</a>
+            </div>
+          </div>
+        </section>
+        <!--Section 2: Career-->
+        <section class="panel section-2">
+          <h1>Career</h1>
+          <div class="cards">
+            <article class="card">
+              <h2>Computer Programming</h2>
+              <p>
+                Brainstorming, desisgning, and building code for managing
+                datasets, building web applications, and creating software
+                solutions to real-world problems. Experienced with UML diagrams,
+                Object-Oriented Programming, Machine Learning, File I/O, and
+                more.
+              </p>
+            </article>
+            <article class="card">
+              <h2>Game Development</h2>
+              <p>
+                Creating interactive and immersive gaming experiences, offering
+                players a chance to explore new roles, develop problem-solving
+                skills, and learn key life lessons through engaging storylines
+                and gameplay. I use game development as a way to bring my
+                creativity to life and connect with others through shared
+                experiences.
+              </p>
+            </article>
+            <article class="card">
+              <h2>Music Production</h2>
+              <p>
+                Seeking inspiration from the world around me, I create music
+                that reflects my emotions and past experiences that turn me into
+                the person I am today. I use music as a form of self-expression
+                and a way to connect with others on a deeper level.
+              </p>
+            </article>
+          </div>
+          <div class="buttons">
+            <a href="html/myProjects.html" class="btn">See my projects</a>
+          </div>
+        </section>
+        <!--Section 3: Contact-->
+        <section class="panel section-3">
+          <h1>Interested in Working Together?</h1>
+          <p>
+            Feel free to reach out if you'd like to collaborate or have any
+            questions!
+          </p>
+          <div class="buttons">
+            <a href="html/connect.html" class="btn">Let's Connect!</a>
+          </div>
+        </section>
+      </div>
     </div>
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
