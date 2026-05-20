@@ -1,43 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <!-------- Loading Screen Stylesheet -------->
-    <link rel="stylesheet" href="../css/loadingpage.css">
+    <link rel="stylesheet" href="../css/loadingpage.css" />
     <!--------- General Stylesheet --------->
-    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/general.css" />
     <!------- Projects Page Stylesheet ------->
-    <link rel="stylesheet" href="../css/connect.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!----- Page Title ----->
     <title>My Projects</title>
-    <link rel="icon" href="../images/aav_logo.png" type="image/png">
-</head>
-<body>
+    <link rel="icon" href="../images/aav_logo.png" type="image/png" />
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <nav>
-        <div class="logo"><a href="../index.html">AAV</a></div>
-        <div class="hamburger-menu" id="hamburger-menu">
-            ☰
-        </div>
-        <div class="nav-links" id="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="myProjects.html">Projects</a>
-            <a href="aboutMe.html">About</a>
-            <a href="connect.html">Connect</a>
-        </div>
+      <div class="logo"><a href="../index.html">AAV</a></div>
+      <div class="hamburger-menu" id="hamburger-menu">☰</div>
+      <div class="nav-links" id="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="myProjects.html">Projects</a>
+        <a href="aboutMe.html">About</a>
+        <a href="connect.html">Connect</a>
+      </div>
     </nav>
     <!---- Main Content ---->
     <div class="page-content">
-        <!--- Loading Screen --->
-        <div class="loader"></div>
-        <!-- Projects Information -->
-        <div class="container">
+      <!--- Loading Screen --->
+      <div class="loader"></div>
+      <div class="scroll-container">
+        <div class="panel section-intro">
+          <!-- Projects Information -->
+          <div class="container">
             <h1>My Projects</h1>
-            <p>Here is where you can find my projects and learn more about my work.</p>
+            <p>
+              Here is where you can find my projects and learn more about my
+              work. Scroll through each category to explore.
+            </p>
+          </div>
         </div>
+
+        <!-- Computer Programming Section -->
+        <div class="panel section-programming">
+          <div class="carousel-wrapper">
+            <button
+              class="carousel-button left"
+              data-carousel="programming-carousel"
+            >
+              ←
+            </button>
+            <div class="projects-carousel" id="programming-carousel">
+              <div class="card loading">
+                <div class="card-loader"></div>
+              </div>
+            </div>
+            <button
+              class="carousel-button right"
+              data-carousel="programming-carousel"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <!-- Game Development Section -->
+        <div class="panel section-gamedev">
+          <div class="carousel-wrapper">
+            <button
+              class="carousel-button left"
+              data-carousel="gamedev-carousel"
+            >
+              ←
+            </button>
+            <div class="projects-carousel" id="gamedev-carousel">
+              <div class="card loading">
+                <div class="card-loader"></div>
+              </div>
+            </div>
+            <button
+              class="carousel-button right"
+              data-carousel="gamedev-carousel"
+            >
+              →
+            </button>
+          </div>
+        </div>
+
+        <!-- Music Section -->
+        <div class="panel section-music">
+          <div class="carousel-wrapper">
+            <button class="carousel-button left" data-carousel="music-carousel">
+              ←
+            </button>
+            <div class="projects-carousel" id="music-carousel">
+              <div class="card loading">
+                <div class="card-loader"></div>
+              </div>
+            </div>
+            <button
+              class="carousel-button right"
+              data-carousel="music-carousel"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="../js/script.js"></script>
-</body>
+    <script src="../js/projects.js"></script>
+  </body>
 </html>
