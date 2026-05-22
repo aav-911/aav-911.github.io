@@ -1,9 +1,19 @@
+/* ALWAYS START AT TOP OF PAGE*/
+window.history.scrollRestoration = "manual";
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
+
+/* MOBILE NAVIGATION */
+
 const hamburger = document.getElementById("hamburger-menu");
 const navLinks = document.getElementById("nav-links");
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
+/* PANEL REVEAL ANIMATION */
 
 const panels = document.querySelectorAll(".panel");
 const panelObserver = new IntersectionObserver(

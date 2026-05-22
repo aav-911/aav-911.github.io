@@ -1,8 +1,92 @@
+/* RESET */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* BASE STYLES */
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #0d1424;
+  color: white;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 75px;
+  line-height: 1;
+  margin-bottom: 20px;
+  color: #2fbad6;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #47bfff;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin: 5px 0;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background-color: #002956;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #47bfff;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: #47bfff;
+  margin-left: 20px;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #2fbad6;
+}
+
+/* PAGE LAYOUT */
+
+.page-content {
+  padding-top: 72px;
+}
+
 .scroll-container {
   position: relative;
 }
@@ -34,84 +118,47 @@
 }
 
 .section-2 {
-  background: #002233;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(38, 208, 206, 0.16),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(0, 87, 120, 0.18),
+      transparent 38%
+    ),
+    #002233;
   z-index: 2;
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
   padding: 80px 40px;
+  flex-direction: column;
 }
 
 .section-3 {
-  background: #003344;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(71, 191, 255, 0.16),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(38, 208, 206, 0.12),
+      transparent 38%
+    ),
+    #003344;
   z-index: 3;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  padding: 80px 40px;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  background: #0d1424;
-  color: white;
-}
-h1 {
-  font-size: 75px;
-  line-height: 1;
-  margin-bottom: 20px;
-  color: #2fbad6;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 40px;
-  background-color: #002956;
-  z-index: 1000;
-}
-
-.page-content {
-  padding-top: 72px;
-}
-
-.nav-links {
-  display: flex;
-}
-
-.nav-links a {
-  color: #2fbad6;
-  margin-left: 20px;
-}
-
-a {
-  color: #2fbad6;
-  text-decoration: none;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #2fbad6;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 40px;
-  margin: 5px 0;
-}
-
-li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
+/* BUTTONS */
 
 .buttons {
   margin-top: 30px;
@@ -150,18 +197,7 @@ li {
   transition: 0.3s ease;
 }
 
-p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.hamburger-menu {
-  display: none;
-  font-size: 32px;
-  cursor: pointer;
-  color: #2fbad6;
-}
+/* RESPONSIVE NAVIGATION */
 
 @media (max-width: 785px) {
   nav {
@@ -217,6 +253,8 @@ p {
   }
 }
 
+/* RESPONSIVE LAYOUT */
+
 @media (max-width: 900px) {
   .panel {
     position: relative;
@@ -235,8 +273,7 @@ p {
   }
 
   .section-3 {
-    height: calc(100vh - 72px);
-    min-height: none;
+    min-height: calc(100vh - 72px);
     justify-content: center;
     padding-top: 24px;
     padding-bottom: 24px;
@@ -271,6 +308,8 @@ p {
     font-size: 17px;
   }
 }
+
+/* SMALL SCREENS */
 
 @media (max-width: 600px) {
   nav {

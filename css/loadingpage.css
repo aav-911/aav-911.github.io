@@ -1,4 +1,7 @@
-/* Loader styles */
+/* =========================
+   LOADER OVERLAY
+========================= */
+
 .loader {
   position: fixed;
 
@@ -18,19 +21,25 @@
 
   animation: fadeOut 1.5s ease forwards;
 
-  animation-delay: .25s;
+  animation-delay: 0.25s;
 }
 
-/* Hide content initially */
+/* =========================
+   PAGE REVEAL
+========================= */
+
 .page-content {
   opacity: 0;
 
   animation: fadeIn 1.5s ease forwards;
 
-  animation-delay: .25s;
+  animation-delay: 0.25s;
 }
 
-/* Fades out loader */
+/* =========================
+   ANIMATIONS
+========================= */
+
 @keyframes fadeOut {
   to {
     opacity: 0;
@@ -38,7 +47,6 @@
   }
 }
 
-/* Fades in content */
 @keyframes fadeIn {
   to {
     opacity: 1;

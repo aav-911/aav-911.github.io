@@ -1,4 +1,7 @@
-/* Loader styles */
+/* =========================
+   LOADER OVERLAY
+========================= */
+
 .loader {
   position: fixed;
 
@@ -21,7 +24,10 @@
   animation-delay: 2s;
 }
 
-/* Loader Text */
+/* =========================
+   LOADER TEXT
+========================= */
+
 .loader h1 {
   font-size: 80px;
   color: #2fbad6;
@@ -29,7 +35,10 @@
   animation: pulse 1.5s infinite;
 }
 
-/* Hide content initially */
+/* =========================
+   PAGE REVEAL
+========================= */
+
 .page-content {
   opacity: 0;
 
@@ -38,7 +47,10 @@
   animation-delay: 2s;
 }
 
-/* Fades out loader */
+/* =========================
+   ANIMATIONS
+========================= */
+
 @keyframes fadeOut {
   to {
     opacity: 0;
@@ -46,16 +58,13 @@
   }
 }
 
-/* Fades in content */
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
 
-/* Pulsing logo effect */
 @keyframes pulse {
-
   0% {
     transform: scale(1);
   }

@@ -1,23 +1,58 @@
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+/* INTRO LAYOUT */
+
+.page-content {
+  padding-top: 0;
+
+  background: #001429;
+  overflow-x: hidden;
+}
+
+.panel.section-1 {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(47, 191, 255, 0.08),
+      transparent 30%
+    ),
+    #001429;
+  gap: 0;
+  padding: 0;
+}
+
+.panel {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
 .left {
-  top: 0%;
   flex: 1;
 }
 
 .right {
-  top: 0%;
   flex: 1;
 }
 
 .left,
 .right {
   width: 50%;
+  position: relative;
+  min-width: 0;
 }
 
 .left img {
-  top: 0%;
+  display: block;
+
   width: 100%;
   height: 100vh;
+  min-height: 640px;
+
   object-fit: cover;
+  box-shadow: 0 10px 40px #93d8ff;
 }
 
 .right {
@@ -25,8 +60,38 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 80px;
+  padding: 120px clamp(32px, 6vw, 80px) 80px;
 }
+
+.right h1 {
+  font-size: clamp(48px, 6vw, 75px);
+
+  line-height: 0.95;
+
+  margin-bottom: 24px;
+
+  font-weight: 700;
+
+  background: linear-gradient(135deg, #5ce1ff, #4f6dff);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+.right p {
+  max-width: 800px;
+
+  font-size: 18px;
+
+  line-height: 1.7;
+
+  color: #b8d8ff;
+
+  opacity: 0.95;
+}
+
+/* CAREER CARDS */
 
 .cards {
   display: flex;
@@ -62,6 +127,8 @@
   margin: 0;
 }
 
+/* RESPONSIVE DESIGN */
+
 @media (max-width: 900px) {
   .left,
   .right {
@@ -70,15 +137,26 @@
 
   .panel.section-1 {
     flex-direction: column;
+    padding-top: 72px;
   }
 
   .right {
-    padding: 40px 24px;
+    order: 2;
+    padding: 48px 24px 40px;
+  }
+
+  .left {
+    margin-top: 24px;
+    order: 1;
   }
 
   .left img {
-    height: auto;
-    max-height: 55vh;
+    height: min(62vh, 520px);
+    min-height: 320px;
+    max-width: 75%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
   }
 
   .buttons {
@@ -96,14 +174,32 @@
     position: relative;
     min-height: auto;
   }
+
+  .panel.section-3 {
+    min-height: 635px;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
+
+/* SMALL SCREENS */
 
 @media (max-width: 600px) {
   .right {
-    padding: 30px 18px;
+    padding: 36px 18px 32px;
+  }
+
+  .right h1 {
+    font-size: clamp(40px, 13vw, 52px);
+  }
+
+  .right p {
+    font-size: 15px;
   }
 
   .left img {
-    max-height: 45vh;
+    height: 46vh;
+    min-height: 280px;
   }
 }

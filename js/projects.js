@@ -1,3 +1,5 @@
+/* PROJECT DATA */
+
 const GITHUB_PROJECTS = [
   {
     name: "Medical-Case_Machine-Leaning",
@@ -58,21 +60,75 @@ const GAMEDEV_PROJECTS = [
   },
 ];
 
-/**
- * Create a section title card and place it first in the carousel
- */
+const SOUNDCLOUD_TRACKS = [
+  {
+    title: "Pollo",
+    link: "https://soundcloud.com/prodbyaav/pollo",
+    description:
+      "One of my first completed beats I ever made. It all started as a joke when I discovered the chicken SFX, asking others if it'll sound good. And it did. I don't know how I did it, but it worked. And so I finished this beat and I actually don't hate it. I hope you enjoy!",
+    image: "../images/pollo_theme.PNG",
+    DAW: "SoundTrap",
+  },
+  {
+    title: "Bluecloak - Title Theme",
+    link: "https://soundcloud.com/prodbyaav/bluecloaktitle",
+    description:
+      "Title theme for 'Bluecloak', offering a cinematic intro to the player, opening a world full of action and intensity.",
+    image: "../images/title_theme.png",
+    DAW: "FL Studio",
+  },
+  {
+    title: "Bluecloak - Grass Theme",
+    link: "https://soundcloud.com/prodbyaav/bluecloakgrass",
+    description:
+      "Grass theme for 'Bluecloak', creating an intense environment as the player faces countless enemies as they come in waves.",
+    image: "../images/grass_theme.png",
+    DAW: "FL Studio",
+  },
+  {
+    title: "Bluecloak - Cave Theme",
+    link: "https://soundcloud.com/prodbyaav/bluecloakcave",
+    description:
+      "Cave theme for 'Bluecloak', creating an upbeat atmoshphere as the player explores the underground depths of the world.",
+    image: "../images/cave_theme.png",
+    DAW: "FL Studio",
+  },
+  {
+    title: "Bluecloak - Boss Theme",
+    link: "https://soundcloud.com/prodbyaav/bluecloakbosstheme",
+    description:
+      "Boss theme for 'Bluecloak', creating a tense and intense atmosphere as the player faces off against the most powerful enemies in the game.",
+    image: "../images/boss_theme.png",
+    DAW: "FL Studio",
+  },
+  {
+    title: "Bluecloak - Ending Theme",
+    link: "https://soundcloud.com/prodbyaav/bluecloakending",
+    description:
+      "Ending theme for 'Bluecloak', offering a cinematic close to the player as they finish the game and reflect on their journey.",
+    image: "../images/ending_theme.png",
+    DAW: "FL Studio",
+  },
+];
+
+/* CARD CREATION */
+
 function createSectionTitleCard(
   sectionTitle,
   sectionDescription,
   image = null,
-  profieLink = null,
+  profileLink = null,
 ) {
   const card = document.createElement("div");
   card.className = "card";
 
   const header = document.createElement("div");
-  header.className = "card-header";
-  header.textContent = sectionTitle;
+  header.className = "card-header project-card-header";
+
+  const headerLabel = document.createElement("span");
+  headerLabel.className = "card-header-label";
+  headerLabel.textContent = sectionTitle;
+  header.appendChild(headerLabel);
 
   if (image) {
     header.style.backgroundImage = `url(${image})`;
@@ -87,30 +143,33 @@ function createSectionTitleCard(
   card.appendChild(header);
   card.appendChild(content);
 
-  if (profieLink) {
+  if (profileLink) {
     const footer = document.createElement("div");
     footer.className = "card-footer";
-    footer.innerHTML = `<a href="${profieLink}" class="card-link" >View Profile</a>`;
+    footer.innerHTML = `<a href="${profileLink}" class="card-link">View Profile</a>`;
     card.appendChild(footer);
   }
 
   return card;
 }
 
-/**
- * Create a project card element
- * @param {object} repo - Repository data
- */
 function createProjectCard(repo) {
   const card = document.createElement("div");
   card.className = "card";
 
-  const languages = repo.language ? repo.language : "N/A";
+  const cardHeaderText = repo.language || repo.DAW || "N/A";
+  const cardTitle = repo.name || repo.title || "Untitled";
   const description = repo.description || "No description available";
+  const cardLink = repo.html_url || repo.link;
+  const cardLinkText = repo.link ? "Listen on SoundCloud!" : "View Repository";
 
   const header = document.createElement("div");
-  header.className = "card-header";
-  header.textContent = languages;
+  header.className = "card-header project-card-header";
+
+  const headerLabel = document.createElement("span");
+  headerLabel.className = "card-header-label";
+  headerLabel.textContent = cardHeaderText;
+  header.appendChild(headerLabel);
 
   if (repo.image) {
     header.style.backgroundImage = `url(${repo.image})`;
@@ -120,24 +179,23 @@ function createProjectCard(repo) {
 
   const content = document.createElement("div");
   content.className = "card-content";
-  content.innerHTML = `<h3>${repo.name}</h3><p>${description}</p>`;
+  content.innerHTML = `<h3>${cardTitle}</h3><p>${description}</p>`;
 
   card.appendChild(header);
   card.appendChild(content);
 
-  if (repo.html_url) {
+  if (cardLink) {
     const footer = document.createElement("div");
     footer.className = "card-footer";
-    footer.innerHTML = `<a href="${repo.html_url}" target="_blank" rel="noopener noreferrer" class="card-link">View Repository</a>`;
+    footer.innerHTML = `<a href="${cardLink}" target="_blank" rel="noopener noreferrer" class="card-link">${cardLinkText}</a>`;
     card.appendChild(footer);
   }
 
   return card;
 }
 
-/**
- * Load and display manual GitHub project cards
- */
+/* LOAD PROJECT GROUPS */
+
 function loadGitHubProjects() {
   const carousel = document.getElementById("programming-carousel");
   if (!carousel) return;
@@ -173,89 +231,6 @@ function loadGameDevProjects() {
   });
 }
 
-const SOUNDCLOUD_TRACKS = [
-  {
-    title: "Pollo",
-    link: "https://soundcloud.com/prodbyaav/pollo",
-    description:
-      "One of my first completed beats I ever made. It all started as a joke when I discovered the chicken SFX, asking others if it'll sound good. And it did. I don't know how I did it, but it worked. And so I finished this beat and I actually don't hate it. I hope you enjoy!",
-    image: "../images/pollo_theme.PNG",
-  },
-  {
-    title: "Bluecloak - Title Theme",
-    link: "https://soundcloud.com/prodbyaav/bluecloaktitle",
-    description:
-      "Title theme for 'Bluecloak', offering a cinematic intro to the player, opening a world full of action and intensity.",
-    image: "../images/title_theme.png",
-  },
-  {
-    title: "Bluecloak - Grass Theme",
-    link: "https://soundcloud.com/prodbyaav/bluecloakgrass",
-    description:
-      "Grass theme for 'Bluecloak', creating an intense environment as the player faces countless enemies as they come in waves.",
-    image: "../images/grass_theme.png",
-  },
-  {
-    title: "Bluecloak - Cave Theme",
-    link: "https://soundcloud.com/prodbyaav/bluecloakcave",
-    description:
-      "Cave theme for 'Bluecloak', creating an upbeat atmoshphere as the player explores the underground depths of the world.",
-    image: "../images/cave_theme.png",
-  },
-  {
-    title: "Bluecloak - Boss Theme",
-    link: "https://soundcloud.com/prodbyaav/bluecloakbosstheme",
-    description:
-      "Boss theme for 'Bluecloak', creating a tense and intense atmosphere as the player faces off against the most powerful enemies in the game.",
-    image: "../images/boss_theme.png",
-  },
-  {
-    title: "Bluecloak - Ending Theme",
-    link: "https://soundcloud.com/prodbyaav/bluecloakending",
-    description:
-      "Ending theme for 'Bluecloak', offering a cinematic close to the player as they finish the game and reflect on their journey.",
-    image: "../images/ending_theme.png",
-  },
-];
-
-function createSoundCloudCard(track) {
-  const card = document.createElement("div");
-  card.className = "card";
-
-  // build inner structure
-  const header = document.createElement("div");
-  header.className = "card-header";
-
-  // if image present, use it as header background
-  if (track.image) {
-    header.style.backgroundImage = `url(${track.image})`;
-    header.setAttribute("aria-label", `${track.title} cover image`);
-    header.style.backgroundSize = "cover";
-    header.style.backgroundPosition = "center";
-  }
-
-  const content = document.createElement("div");
-  content.className = "card-content";
-  content.innerHTML = `
-    <h3>${track.title}</h3>
-    <p>${track.description}</p>
-  `;
-
-  const footer = document.createElement("div");
-  footer.className = "card-footer";
-  footer.innerHTML = `
-    <a href="${track.link}" target="_blank" rel="noopener noreferrer" class="card-link">
-      Listen on SoundCloud!
-    </a>
-  `;
-
-  card.appendChild(header);
-  card.appendChild(content);
-  card.appendChild(footer);
-
-  return card;
-}
-
 function loadSoundCloudTracks() {
   const carousel = document.getElementById("music-carousel");
   if (!carousel) return;
@@ -270,9 +245,11 @@ function loadSoundCloudTracks() {
     ),
   );
   SOUNDCLOUD_TRACKS.forEach((track) => {
-    carousel.appendChild(createSoundCloudCard(track));
+    carousel.appendChild(createProjectCard(track));
   });
 }
+
+/* CAROUSEL STATE */
 
 const carouselState = {};
 
@@ -312,6 +289,8 @@ function moveCarousel(carouselId, direction) {
   setCarouselActive(carouselId, nextIndex);
 }
 
+/* INITIALIZATION */
+
 function initializeCarousels() {
   setCarouselActive("programming-carousel", 0);
   setCarouselActive("gamedev-carousel", 0);
@@ -327,9 +306,6 @@ function initializeCarousels() {
   });
 }
 
-/**
- * Initialize projects page
- */
 function initializeProjects() {
   const initialize = () => {
     loadGitHubProjects();
@@ -345,5 +321,4 @@ function initializeProjects() {
   }
 }
 
-// Start initialization
 initializeProjects();
