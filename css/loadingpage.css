@@ -1,6 +1,4 @@
-/* =========================
-   LOADER OVERLAY
-========================= */
+/* LOADER OVERLAY */
 
 .loader {
   position: fixed;
@@ -24,9 +22,7 @@
   animation-delay: 0.25s;
 }
 
-/* =========================
-   PAGE REVEAL
-========================= */
+/* PAGE REVEAL */
 
 .page-content {
   opacity: 0;
@@ -36,9 +32,7 @@
   animation-delay: 0.25s;
 }
 
-/* =========================
-   ANIMATIONS
-========================= */
+/* ANIMATIONS */
 
 @keyframes fadeOut {
   to {

@@ -146,7 +146,7 @@ function createSectionTitleCard(
   if (profileLink) {
     const footer = document.createElement("div");
     footer.className = "card-footer";
-    footer.innerHTML = `<a href="${profileLink}" class="card-link">View Profile</a>`;
+    footer.innerHTML = `<a href="${profileLink}" target="_blank" rel="noopener noreferrer" class="card-link">View Profile</a>`;
     card.appendChild(footer);
   }
 

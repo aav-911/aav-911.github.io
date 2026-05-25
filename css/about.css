@@ -1,6 +1,4 @@
-/* =========================
-   PAGE BACKGROUND
-========================= */
+/* PAGE BACKGROUND */
 
 .page-content {
   min-height: 100vh;
@@ -8,9 +6,7 @@
   background: #001429;
 }
 
-/* =========================
-   ABOUT INTRO
-========================= */
+/* ABOUT INTRO */
 
 .container {
   position: relative;
@@ -68,9 +64,7 @@ p {
   opacity: 0.95;
 }
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
+/* RESPONSIVE DESIGN */
 
 @media (max-width: 768px) {
   .container {

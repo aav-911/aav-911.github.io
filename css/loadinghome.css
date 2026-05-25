@@ -1,6 +1,4 @@
-/* =========================
-   LOADER OVERLAY
-========================= */
+/* LOADER OVERLAY */
 
 .loader {
   position: fixed;
@@ -24,9 +22,7 @@
   animation-delay: 2s;
 }
 
-/* =========================
-   LOADER TEXT
-========================= */
+/* LOADER TEXT */
 
 .loader h1 {
   font-size: 80px;
@@ -35,9 +31,7 @@
   animation: pulse 1.5s infinite;
 }
 
-/* =========================
-   PAGE REVEAL
-========================= */
+/* PAGE REVEAL */
 
 .page-content {
   opacity: 0;
@@ -47,9 +41,7 @@
   animation-delay: 2s;
 }
 
-/* =========================
-   ANIMATIONS
-========================= */
+/* ANIMATIONS */
 
 @keyframes fadeOut {
   to {
