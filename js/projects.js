@@ -7,7 +7,7 @@ const GITHUB_PROJECTS = [
       "A machine learning project where the program uses the features of the medical conditions to train and make predictions.",
     html_url: "https://github.com/aav-911/Medical-Case_Machine-Leaning",
     language: "Python",
-    image: "../images/blue_gradient.png",
+    image: "../images/gfu5.jpg",
   },
   {
     name: "Java-Store_System",
@@ -15,7 +15,7 @@ const GITHUB_PROJECTS = [
       "A completed class project that simulates a working store inventory system that manages the purchase, restock, refund, and counting of...",
     html_url: "https://github.com/aav-911/Java-Store_System",
     language: "Java",
-    image: "../images/blue_gradient.png",
+    image: "../images/gfu5.jpg",
   },
   {
     name: "Portfolio Site",
@@ -23,7 +23,7 @@ const GITHUB_PROJECTS = [
       "My personal portfolio website where I demonstrate who I am both personally and academically.",
     html_url: "https://github.com/aav-911/aav-911.github.io",
     language: "HTML/CSS/JavaScript",
-    image: "../images/blue_gradient.png",
+    image: "../images/gfu5.jpg",
   },
   {
     name: "Air-Traffic_Data-Exploration",
@@ -31,7 +31,7 @@ const GITHUB_PROJECTS = [
       "A project where the program collects and describes the data found in the given dataset.",
     html_url: "https://github.com/aav-911/Air-Traffic_Data-Exploration",
     language: "Python",
-    image: "../images/blue_gradient.png",
+    image: "../images/gfu5.jpg",
   },
   {
     name: "Air-Traffic_Project",
@@ -39,7 +39,7 @@ const GITHUB_PROJECTS = [
       "An experiment where the program measures and compares the number of passengers per domestic and international flights in San Francisco International Airport.",
     html_url: "https://github.com/aav-911/Air-Traffic_Project",
     language: "Python",
-    image: "../images/blue_gradient.png",
+    image: "../images/gfu5.jpg",
   },
 ];
 
@@ -223,7 +223,7 @@ function loadGameDevProjects() {
     createSectionTitleCard(
       "Game Development",
       "Interactive experiences, prototypes, and game jams.",
-      "../images/blue_gradient.png",
+      "../images/unity.png",
     ),
   );
   GAMEDEV_PROJECTS.forEach((project) => {

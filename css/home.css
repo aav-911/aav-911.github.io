@@ -10,12 +10,6 @@ html {
   overflow-x: hidden;
 }
 
-.scroll-container {
-  display: flex;
-  flex-direction: column;
-  overflow: visible;
-}
-
 .panel.section-1 {
   background:
     radial-gradient(
@@ -44,21 +38,6 @@ html {
   transform: none;
 }
 
-.left {
-  flex: 1;
-}
-
-.right {
-  flex: 1;
-}
-
-.left,
-.right {
-  width: 50%;
-  position: relative;
-  min-width: 0;
-}
-
 .left img {
   display: block;
 
@@ -83,29 +62,19 @@ html {
 
 .right h1 {
   font-size: clamp(48px, 6vw, 75px);
-
   line-height: 0.95;
-
   margin-bottom: 24px;
-
   font-weight: 700;
-
   background: linear-gradient(135deg, #5ce1ff, #4f6dff);
-
   -webkit-background-clip: text;
-
   -webkit-text-fill-color: transparent;
 }
 
 .right p {
   max-width: 800px;
-
   font-size: 18px;
-
   line-height: 1.7;
-
   color: #b8d8ff;
-
   opacity: 0.95;
 }
 
