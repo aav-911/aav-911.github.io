@@ -112,6 +112,34 @@
         </div>
       </div>
     </div>
+    <div id="music-player-ui" class="music-player hidden">
+      <div class="player-info">
+        <span id="current-track-title"> No Track Selected </span>
+      </div>
+
+      <div class="player-controls">
+        <button id="play-pause-btn" type="button">Play</button>
+      </div>
+
+      <div class="player-progress">
+        <input
+          type="range"
+          id="progress-bar"
+          value="0"
+          min="0"
+          max="100"
+          aria-label="Track progress"
+        />
+      </div>
+
+      <div class="player-time">
+        <span id="current-time">0:00</span>
+        /
+        <span id="duration">0:00</span>
+      </div>
+    </div>
+
+    <audio id="audio-player"></audio>
     <script src="../js/script.js"></script>
     <script src="../js/projects.js"></script>
   </body>
