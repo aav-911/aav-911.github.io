@@ -34,12 +34,19 @@ h1 {
   line-height: 1;
   margin-bottom: 20px;
   color: #2fbad6;
+  font-family: "Orbitron", sans-serif;
+}
+
+h2,
+h3 {
+  font-family: "Space Grotesk", sans-serif;
 }
 
 p {
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
 }
 
 a {
@@ -77,6 +84,7 @@ nav {
   font-size: 24px;
   font-weight: bold;
   color: #47bfff;
+  font-family: "Abril Fatface";
 }
 
 .nav-links {
@@ -86,6 +94,7 @@ nav {
 .nav-links a {
   color: #47bfff;
   margin-left: 20px;
+  font-family: "Orbitron", sans-serif;
 }
 
 .hamburger-menu {
@@ -357,5 +366,39 @@ nav {
     padding-top: 24px;
     padding-bottom: 24px;
     justify-content: center;
+  }
+}
+
+/* Typewriter cursor styling for data-driven headings */
+[data-typewriter-text] {
+  display: inline-block;
+  width: fit-content;
+  min-height: 1em;
+}
+
+[data-typewriter-text].active::after {
+  content: "";
+  display: inline-block;
+  width: 0.08em;
+  height: 0.82em;
+  margin-left: 0.08em;
+  background: #5ce1ff;
+  transform: translateY(0.08em);
+  animation: typewriterCursor 0.9s ease-in-out infinite;
+}
+
+[data-typewriter-text].complete::after {
+  content: none;
+}
+
+@keyframes typewriterCursor {
+  0%,
+  45% {
+    opacity: 1;
+  }
+
+  46%,
+  100% {
+    opacity: 0;
   }
 }

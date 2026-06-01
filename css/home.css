@@ -23,6 +23,13 @@ html {
 }
 .panel.section-3 {
   padding: 225px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(47, 191, 255, 0.08),
+      transparent 30%
+    ),
+    #001429;
 }
 
 .panel {
@@ -68,6 +75,43 @@ html {
   background: linear-gradient(135deg, #5ce1ff, #4f6dff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.typewriter-heading {
+  min-height: 3em;
+}
+
+.typewriter-line {
+  display: block;
+  width: fit-content;
+  min-height: 0.95em;
+}
+
+.typewriter-line.active::after {
+  content: "";
+  display: inline-block;
+  width: 0.08em;
+  height: 0.82em;
+  margin-left: 0.08em;
+  background: #5ce1ff;
+  transform: translateY(0.08em);
+  animation: typewriterCursor 0.9s ease-in-out infinite;
+}
+
+.typewriter-line.complete::after {
+  content: none;
+}
+
+@keyframes typewriterCursor {
+  0%,
+  45% {
+    opacity: 1;
+  }
+
+  46%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .right p {

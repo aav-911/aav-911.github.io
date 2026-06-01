@@ -226,7 +226,7 @@ function loadGitHubProjects() {
     createSectionTitleCard(
       "Computer Programming",
       "Data analysis and programming tools built from scratch.",
-      "../images/github.svg",
+      "../images/github.png",
       "https://github.com/aav-911",
     ),
   );
