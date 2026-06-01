@@ -31,3 +31,37 @@ const panelObserver = new IntersectionObserver(
 );
 
 panels.forEach((panel) => panelObserver.observe(panel));
+
+/* INTRO MUSIC INITIALIZATION */
+(function initBgMusic() {
+  const audio = document.getElementById("bg-music");
+  if (!audio) return;
+  audio.volume = 0.5;
+  audio.preload = "auto";
+
+  function tryPlay() {
+    const p = audio.play();
+    if (p !== undefined) {
+      p.catch(() => {
+        const resume = () => {
+          audio.play().catch(() => {});
+          window.removeEventListener("click", resume);
+          window.removeEventListener("keydown", resume);
+        };
+        window.addEventListener("click", resume);
+        window.addEventListener("keydown", resume);
+      });
+    }
+  }
+
+  if (
+    document.readyState === "complete" ||
+    document.readyState === "interactive"
+  ) {
+    setTimeout(tryPlay, 200);
+  } else {
+    document.addEventListener("DOMContentLoaded", () =>
+      setTimeout(tryPlay, 200),
+    );
+  }
+})();
