@@ -23,7 +23,7 @@ const PROGRESS_ENTRIES = [
     skills: "Skills: Song-writing - Video-editing - Capcut",
   },
   {
-    title: "Discovering New Ppassions",
+    title: "Discovering New Passions",
     time: "Fall 2023",
     description:
       "Discovered Computer Science and began learning key languages (such as HTML) needed to build and style websites. Learned the basics of programming and made small-scale projects.",
@@ -71,7 +71,7 @@ const PROGRESS_ENTRIES = [
     title: "Future Goals - What's Next..?",
     time: "~2031",
     description:
-      "For the next five years, I plan on expanding my skillset through my academic journey, making connectsions, and completing and finishing projects. I strive to use my knowledge and creativity to build interactive experiences for the world to interact with. I also plan on incoporating my faith into the workforce, preaching to the world what Christ taught us. I also plan on updating this website with my accomplishments",
+      "For the next five years, I plan on expanding my skillset through my academic journey, making connections, and completing and finishing projects. I strive to use my knowledge and creativity to build interactive experiences for the world to interact with. I also plan on incoporating my faith into the workforce, preaching to the world what Christ taught us. I also plan on updating this website with my accomplishments",
     skills:
       "Milestones Planned: Graduate from GFU - Bluecloak - 2D Horror Game - Update Portfolio Website - Release Music on Streaming Platforms - School Projects",
   },

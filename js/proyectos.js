@@ -1,42 +1,42 @@
-﻿/* PROJECT DATA */
+/* PROJECT DATA */
 
 const GITHUB_PROJECTS = [
   {
-    name: "Medical-Case_Machine-Leaning",
+    name: "Caso-Médico_Aprendizaje-Automático",
     description:
-      "A machine learning project where the program uses the features of the medical conditions to train and make predictions.",
+      "Un proyecto de aprendizaje automático donde el programa utiliza las características de las condiciones médicas para entrenar y hacer predicciones.",
     html_url: "https://github.com/aav-911/Medical-Case_Machine-Leaning",
     language: "Python",
     image: "../images/gfu5.jpg",
   },
   {
-    name: "Java-Store_System",
+    name: "Java_Sistema-de-Tienda",
     description:
-      "A completed class project that simulates a working store inventory system that manages the purchase, restock, refund, and counting of the available products that are categorized in three different types.",
+      "Un proyecto de clase completo que simula un sistema de inventario de tienda en funcionamiento que gestiona la compra, reposición, reembolso y recuento de los productos disponibles que se clasifican en tres tipos diferentes.",
     html_url: "https://github.com/aav-911/Java-Store_System",
     language: "Java",
     image: "../images/gfu5.jpg",
   },
   {
-    name: "Portfolio Site",
+    name: "Sitio de Portafolio",
     description:
-      "My personal portfolio website where I demonstrate who I am both personally and academically.",
+      "Mi sitio web de portafolio personal donde demuestro quién soy tanto personal como académicamente.",
     html_url: "https://github.com/aav-911/aav-911.github.io",
     language: "HTML/CSS/JavaScript",
     image: "../images/gfu5.jpg",
   },
   {
-    name: "Air-Traffic_Data-Exploration",
+    name: "Tráfico-Aéreo_Exploración-de-Datos",
     description:
-      "A project where the program collects and describes the data found in the given dataset.",
+      "Un proyecto donde el programa recopila y describe los datos encontrados en el conjunto de datos dado.",
     html_url: "https://github.com/aav-911/Air-Traffic_Data-Exploration",
     language: "Python",
     image: "../images/gfu5.jpg",
   },
   {
-    name: "Air-Traffic_Project",
+    name: "Tráfico-Aéreo_Proyecto",
     description:
-      "An experiment where the program measures and compares the number of passengers per domestic and international flights in San Francisco International Airport.",
+      "Un experimento donde el programa mide y compara el número de pasajeros por vuelos domésticos e internacionales en el Aeropuerto Internacional de San Francisco.",
     html_url: "https://github.com/aav-911/Air-Traffic_Project",
     language: "Python",
     image: "../images/gfu5.jpg",
@@ -47,14 +47,14 @@ const GAMEDEV_PROJECTS = [
   {
     name: "Bluecloak",
     description:
-      "A 2D rogue-like indie game built in Unity, currently in development.",
+      "Un juego indie de tipo rogue-like en 2D construido en Unity, actualmente en desarrollo.",
     image: "../images/title_theme.png",
     language: "C#",
   },
   {
-    name: "Coming Soon",
+    name: "Próximamente...",
     description:
-      "2D turn-based apocaliptic horror game where players navigate a post-apocalyptic world, face against the undead and raiders as they seek a new home...",
+      "Juego de horror apocalíptico en 2D con turnos donde los jugadores navegan por un mundo post-apocalíptico, enfrentándose a los no muertos y depredadores mientras buscan un nuevo hogar...",
     image: "../images/blue_gradient.png",
     language: "C#",
   },
@@ -65,52 +65,52 @@ const SOUNDCLOUD_TRACKS = [
     title: "Pollo",
     link: "https://soundcloud.com/prodbyaav/pollo",
     description:
-      "One of my first completed beats I ever made. It all started as a joke when I discovered the chicken SFX, asking others if it'll sound good. And it did. I don't know how I did it, but it worked. And so I finished this beat and I actually don't hate it. I hope you enjoy!",
+      "Uno de mis primeros ritmos completos que hice. Todo empezó como una broma cuando descubrí el SFX del pollo y pregunté a otros si sonaría bien. Y así fue. No sé cómo lo hice, pero funcionó. Y así terminé este ritmo y realmente no lo odio. ¡Espero que lo disfrutes!",
     image: "../images/pollo_theme.PNG",
     DAW: "SoundTrap",
     song: "../music/Pollo.wav",
   },
   {
-    title: "Bluecloak - Title Theme",
+    title: "Bluecloak - Música Principal",
     link: "https://soundcloud.com/prodbyaav/bluecloaktitle",
     description:
-      "Title theme for 'Bluecloak', offering a cinematic intro to the player, opening a world full of action and intensity.",
+      "Música principal de 'Bluecloak', que ofrece una introducción cinematográfica al jugador, abriendo un mundo lleno de acción e intensidad.",
     image: "../images/title_theme.png",
     DAW: "FL Studio",
     song: "../music/Title_Theme.wav",
   },
   {
-    title: "Bluecloak - Grass Theme",
+    title: "Bluecloak - Música del superfici",
     link: "https://soundcloud.com/prodbyaav/bluecloakgrass",
     description:
-      "Grass theme for 'Bluecloak', creating an intense environment as the player faces countless enemies as they come in waves.",
+      "Música del superficie para 'Bluecloak', creando un entorno intenso mientras el jugador enfrenta incontables enemigos en olas.",
     image: "../images/grass_theme.png",
     DAW: "FL Studio",
     song: "../music/Grass_Theme.wav",
   },
   {
-    title: "Bluecloak - Cave Theme",
+    title: "Bluecloak - Música de Cueva",
     link: "https://soundcloud.com/prodbyaav/bluecloakcave",
     description:
-      "Cave theme for 'Bluecloak', creating an upbeat atmoshphere as the player explores the underground depths of the world.",
+      "Música de cueva para 'Bluecloak', creando una atmósfera alegre mientras el jugador explora las profundidades subterráneas del mundo.",
     image: "../images/cave_theme.png",
     DAW: "FL Studio",
     song: "../music/Cave_Theme.wav",
   },
   {
-    title: "Bluecloak - Boss Theme",
+    title: "Bluecloak - Música de Jefe",
     link: "https://soundcloud.com/prodbyaav/bluecloakbosstheme",
     description:
-      "Boss theme for 'Bluecloak', creating a tense and intense atmosphere as the player faces off against the most powerful enemies in the game.",
+      "Música de jefe para 'Bluecloak', creando una atmósfera tensa e intensa mientras el jugador se enfrenta a los enemigos más poderosos del juego.",
     image: "../images/boss_theme.png",
     DAW: "FL Studio",
     song: "../music/Boss_Theme.wav",
   },
   {
-    title: "Bluecloak - Ending Theme",
+    title: "Bluecloak - Música de Final",
     link: "https://soundcloud.com/prodbyaav/bluecloakending",
     description:
-      "Ending theme for 'Bluecloak', offering a cinematic close to the player as they finish the game and reflect on their journey.",
+      "Música de final para 'Bluecloak', ofreciendo un cierre cinematográfico al jugador mientras terminan el juego y reflexionan sobre su viaje.",
     image: "../images/ending_theme.png",
     DAW: "FL Studio",
     song: "../music/Ending_Theme.wav",
@@ -152,7 +152,7 @@ function createSectionTitleCard(
   if (profileLink) {
     const footer = document.createElement("div");
     footer.className = "card-footer";
-    footer.innerHTML = `<a href="${profileLink}" target="_blank" rel="noopener noreferrer" class="card-link">View Profile</a>`;
+    footer.innerHTML = `<a href="${profileLink}" target="_blank" rel="noopener noreferrer" class="card-link">Ver Perfil</a>`;
     card.appendChild(footer);
   }
 
@@ -165,10 +165,10 @@ function createProjectCard(repo) {
 
   const isMusicTrack = Boolean(repo.song);
   const cardHeaderText = repo.language || repo.DAW || "N/A";
-  const cardTitle = repo.name || repo.title || "Untitled";
-  const description = repo.description || "No description available";
+  const cardTitle = repo.name || repo.title || "Sin título";
+  const description = repo.description || "No descripcion disponible";
   const cardLink = isMusicTrack ? null : repo.html_url || repo.link;
-  const cardLinkText = "View Repository";
+  const cardLinkText = "Ver Repositorio";
 
   const header = document.createElement("div");
   header.className = "card-header project-card-header";
@@ -202,9 +202,9 @@ function createProjectCard(repo) {
 
       playButton.type = "button";
       playButton.className = "card-link track-play-button";
-      playButton.textContent = "Play Track";
+      playButton.textContent = "Reproducir pista de música";
       playButton.dataset.trackTitle = cardTitle;
-      playButton.setAttribute("aria-label", `Play ${cardTitle}`);
+      playButton.setAttribute("aria-label", `Reproducir ${cardTitle}`);
       playButton.addEventListener("click", () => playTrack(repo));
 
       footer.appendChild(playButton);
@@ -224,8 +224,8 @@ function loadGitHubProjects() {
   carousel.innerHTML = "";
   carousel.appendChild(
     createSectionTitleCard(
-      "Computer Programming",
-      "Data analysis and programming tools built from scratch.",
+      "Programación Informática",
+      "Herramientas de análisis y programación de datos creadas desde cero.",
       "../images/github.png",
       "https://github.com/aav-911",
     ),
@@ -242,8 +242,8 @@ function loadGameDevProjects() {
   carousel.innerHTML = "";
   carousel.appendChild(
     createSectionTitleCard(
-      "Game Development",
-      "Interactive experiences, prototypes, and game jams.",
+      "Desarrollo de Juegos",
+      "Experiencias interactivas, prototipos y jams de juego.",
       "../images/unity.png",
     ),
   );
@@ -259,8 +259,8 @@ function loadSoundCloudTracks() {
   carousel.innerHTML = "";
   carousel.appendChild(
     createSectionTitleCard(
-      "Music Production",
-      "Tracks, sound design, and music for projects.",
+      "Producción Musical",
+      "Pistas, diseño de sonido y música para proyectos.",
       "../images/aav_logo.png",
       "https://soundcloud.com/prodbyaav",
     ),
@@ -366,11 +366,13 @@ function updateTrackButtons() {
 
     const isPlaying = isCurrentTrack && !audioPlayer.paused;
 
-    button.textContent = isPlaying ? "Pause Track" : "Play Track";
+    button.textContent = isPlaying
+      ? "Pausar pista de musica"
+      : "Reproducir pista de música";
 
     button.setAttribute(
       "aria-label",
-      `${isPlaying ? "Pause" : "Play"} ${button.dataset.trackTitle}`,
+      `${isPlaying ? "Pausar" : "Reproducir"} ${button.dataset.trackTitle}`,
     );
   });
 }

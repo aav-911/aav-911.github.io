@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!------ Loading Screen Stylesheet ------>
+    <link rel="stylesheet" href="../css/loadinghome.css" />
+    <!--------- General Stylesheet --------->
+    <link rel="stylesheet" href="../css/general.css" />
+    <!-------- HomePage Stylesheet -------->
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril Fatface"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page Title -->
+    <title>Inicio</title>
+    <link rel="icon" href="../images/aav_logo.png" type="image/png" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loader">
+      <h1>AAV</h1>
+    </div>
+    <!-- Main Content -->
+    <div class="page-content">
+      <!-- Navigation Bar -->
+      <nav aria-label="Primary navigation">
+        <div class="logo"><a href="homepage.html">AAV</a></div>
+        <div class="hamburger-menu" id="hamburger-menu">☰</div>
+
+        <div class="nav-links" id="nav-links">
+          <a href="paginaDeInicio.html">Inicio</a>
+          <a href="misProyectos.html">Proyectos</a>
+          <a href="acercaDeMi.html">Acerca de Mí</a>
+          <a href="conectar.html">Conectar</a>
+          <a href="../index.html">Idioma</a>
+        </div>
+      </nav>
+      <!-- Home Page Content -->
+      <div class="scroll-container">
+        <!--Section 1: Introduction-->
+        <section class="panel section-1">
+          <!-- Left Side with Image -->
+          <div class="left">
+            <img src="../images/grad_photo.jpg" alt="Grad Photo" />
+          </div>
+          <!-- Right Side with Text -->
+          <div class="right">
+            <h1
+              class="typewriter-heading"
+              aria-label="Programador informático. Desarrollador de juegos. Productor musical."
+            >
+              <span
+                class="typewriter-line"
+                data-typewriter-text="Programador Informático."
+                >Programador Informático.</span
+              >
+              <span
+                class="typewriter-line"
+                data-typewriter-text="Desarrollador de Juegos."
+                >Desarrollador de Juegos.</span
+              >
+              <span
+                class="typewriter-line"
+                data-typewriter-text="Productor Musical."
+                >Productor Musical.</span
+              >
+            </h1>
+            <p>
+              Hola, soy Alex Vega — un programador creativo apasionado por
+              escribir codificar, diseñar juegos y producir música. Me encanta
+              generar ideas a la realidad a través de la tecnología y la
+              creatividad.
+            </p>
+            <!-- Buttons -->
+            <div class="buttons">
+              <a href="aboutMe.html" class="btn">Acerca de mí</a>
+            </div>
+          </div>
+        </section>
+        <!--Section 2: Career-->
+        <section class="panel section-2">
+          <h1>Carrera</h1>
+          <div class="cards">
+            <article class="card">
+              <h2>Programación Informática</h2>
+              <p>
+                Generar ideas, diseños y código para gestionar conjuntos de
+                datos, creación de aplicaciones web y creación de soluciones de
+                software para problemas del mundo real. Experiencia con
+                diagramas UML, programación orientada a objetos, aprendizaje
+                automático, E/S de archivos y más.
+              </p>
+            </article>
+            <article class="card">
+              <h2>Desarrollo de Juegos</h2>
+              <p>
+                Crear experiencias de juego interactivas e inmersivas,
+                ofreciendo a los jugadores la oportunidad de explorar nuevos
+                roles, desarrollar habilidades de resolución de problemas y
+                aprender lecciones de vida clave a través de historias y juegos
+                atractivos. Utilizo el desarrollo de juegos como una forma de
+                dar vida a mi creatividad y conectarme con otros a través de
+                experiencias compartidas.
+              </p>
+            </article>
+            <article class="card">
+              <h2>Producción Musical</h2>
+              <p>
+                Buscando inspiración en el mundo que me rodea, creo música que
+                refleja mis emociones y experiencias pasadas que me convierten
+                en la persona que soy hoy. Utilizo la música como una forma de
+                autoexpresión y una forma de conectarme con los demás a un nivel
+                más profundo.
+              </p>
+            </article>
+          </div>
+          <div class="buttons">
+            <a href="myProjects.html" class="btn-outline">Ver mis proyectos</a>
+          </div>
+        </section>
+        <!--Section 3: Contact-->
+        <section class="panel section-3">
+          <h1>¿Interesado en Trabajar Juntos?</h1>
+          <p>
+            ¡No dudes en comunicarte conmigo si deseas colaborar o tienes alguna
+            pregunta!
+          </p>
+          <div class="buttons">
+            <a href="connect.html" class="btn">¡Conectemos!</a>
+          </div>
+        </section>
+      </div>
+    </div>
+    <audio id="bg-music" src="../music/Website_Home.mp3" preload="auto"></audio>
+    <script src="../js/script.js"></script>
+    <script src="../js/typewriter.js"></script>
+  </body>
+</html>
