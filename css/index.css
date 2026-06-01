@@ -1,0 +1,29 @@
+/* PAGE LAYOUT */
+.page-content {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(47, 191, 255, 0.08),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at top left,
+      rgba(47, 191, 255, 0.08),
+      transparent 30%
+    ),
+    #001429;
+}
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}

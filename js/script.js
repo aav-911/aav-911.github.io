@@ -9,9 +9,11 @@ window.addEventListener("load", () => {
 const hamburger = document.getElementById("hamburger-menu");
 const navLinks = document.getElementById("nav-links");
 
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
+if (hamburger && navLinks) {
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+}
 
 /* PANEL REVEAL ANIMATION */
 
@@ -64,4 +66,42 @@ panels.forEach((panel) => panelObserver.observe(panel));
       setTimeout(tryPlay, 200),
     );
   }
+})();
+
+/* Ensure loader is removed after CSS fadeOut completes to avoid lingering overlay */
+(function handleLoader() {
+  const loader = document.querySelector(".loader");
+  const page = document.querySelector(".page-content");
+  if (!loader) return;
+
+  function onAnimationEnd(e) {
+    if (e.animationName === "fadeOut") {
+      loader.style.pointerEvents = "none";
+      loader.style.visibility = "hidden";
+      loader.style.display = "none";
+      if (page) page.style.opacity = "1";
+      loader.removeEventListener("animationend", onAnimationEnd);
+    }
+  }
+
+  loader.addEventListener("animationend", onAnimationEnd);
+  // Also ensure loader is removed once the page-content finishes its fadeIn
+  if (page) {
+    const onPageAnimEnd = (ev) => {
+      if (ev.animationName === "fadeIn") {
+        loader.style.pointerEvents = "none";
+        loader.style.visibility = "hidden";
+        loader.style.display = "none";
+        page.removeEventListener("animationend", onPageAnimEnd);
+      }
+    };
+    page.addEventListener("animationend", onPageAnimEnd);
+  }
+  // Fallback: ensure loader is removed after 5s if animationend doesn't fire
+  setTimeout(() => {
+    if (getComputedStyle(loader).display !== "none") {
+      loader.style.display = "none";
+      if (page) page.style.opacity = "1";
+    }
+  }, 5000);
 })();
