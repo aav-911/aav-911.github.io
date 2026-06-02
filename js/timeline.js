@@ -12,14 +12,14 @@ const PROGRESS_ENTRIES = [
     title: "Growing My Roots",
     time: "2020-2021",
     description:
-      "Took a beginner music production course and learned the basics of music theory, music composition, and gain access Soundtrap. Gained access to a whole new library of instruments, effects, loops, and other resources.",
+      "Took a beginner music production course and learned the basics of music theory and music composition, and gained access to Soundtrap. Gained access to a whole new library of instruments, effects, loops, and other resources.",
     skills: "Skills: Soundtrap - Music Theory - Music Production",
   },
   {
     title: "Building my Music Career",
     time: "2022-2023",
     description:
-      "Began experimenting with music production, which resulted in me making music projects, covers of other songs, and sound effects. Also started making music videos for my projects, although most of them I keep them for personal use.",
+      "Began experimenting with music production, which resulted in me making music projects, covers of other songs, and sound effects. Also started making music videos for my projects, although I keep most of them for personal use.",
     skills: "Skills: Song-writing - Video-editing - Capcut",
   },
   {
@@ -37,25 +37,25 @@ const PROGRESS_ENTRIES = [
     skills: "Award: High School Diploma",
   },
   {
-    title: "Freshman Year - Building a New Skillset",
+    title: "Freshman Year - Building a New Skill Set",
     time: "2024-2025",
     description:
-      "Started attending George Fox University. Currently majoring in Computer Science and minoring in Theology with the concentration in Christian Ministries. Learned more in depth of different programming languages and their usage. Also took a Christian leadership course where I learned to be a team leader in the Christian workfield.",
+      "Started attending George Fox University. Currently majoring in Computer Science and minoring in Theology with a concentration in Christian Ministries. Learned more in depth about different programming languages and their usage. Also took a Christian leadership course where I learned to be a team leader in the Christian workforce.",
     skills:
-      "Skills: Python - Java - Theology - Leadership - Object-Oriented Programing - PyCharm - IntelliJ IDEA",
+      "Skills: Python - Java - Theology - Leadership - Object-Oriented Programming - PyCharm - IntelliJ IDEA",
   },
   {
-    title: "Sophmore Year - Amplifying Knowledge",
+    title: "Sophomore Year - Amplifying Knowledge",
     time: "Fall 2025",
     description:
       "Learned discrete mathematics, combinatorics, algorithms and more. Started experimenting with FL Studio and the usage of professional instruments and resources.",
     skills: "Skills: Discrete Math - FL Studio",
   },
   {
-    title: "Sophmore Year - Faith + Creations",
+    title: "Sophomore Year - Faith + Creations",
     time: "Spring 2026",
     description:
-      "Took a Data Science course where I learned how to manage datasets, experiment with it, modify the values, and create graphics with it. Took a Game Development course where I learned to how to design and program a working video game in a team of three. This is where we started our 'Bluecloak' project, which is a 2D rouge-like indie game filled with action and intensity. I also worked on the soundtrack of the game in FL Studio. During this term, I took a Spiritual Formation course, where I deeply connected with God, learned about different culture and practices from other denominations.",
+      "Took a Data Science course where I learned how to manage datasets, experiment with them, modify their values, and create graphics with them. Took a Game Development course where I learned how to design and program a working video game in a team of three. This is where we started our 'Bluecloak' project, which is a 2D roguelike indie game filled with action and intensity. I also worked on the soundtrack of the game in FL Studio. During this term, I took a Spiritual Formation course, where I deeply connected with God and learned about different cultures and practices from other denominations.",
     skills:
       "Skills: FL Studio - C# - Unity - Python - Machine Learning - DataFrames - Data Analysis - Spreadsheets - Data Management - Sound Design - Game Development - Game Design - Spiritual Collaboration - Discipleship - Theology - VSCode - GitLab",
   },
@@ -71,7 +71,7 @@ const PROGRESS_ENTRIES = [
     title: "Future Goals - What's Next..?",
     time: "~2031",
     description:
-      "For the next five years, I plan on expanding my skillset through my academic journey, making connections, and completing and finishing projects. I strive to use my knowledge and creativity to build interactive experiences for the world to interact with. I also plan on incoporating my faith into the workforce, preaching to the world what Christ taught us. I also plan on updating this website with my accomplishments",
+      "For the next five years, I plan on expanding my skill set through my academic journey, making connections, and completing projects. I strive to use my knowledge and creativity to build interactive experiences for the world to interact with. I also plan on incorporating my faith into the workforce, preaching to the world what Christ taught us. I also plan on updating this website with my accomplishments.",
     skills:
       "Milestones Planned: Graduate from GFU - Bluecloak - 2D Horror Game - Update Portfolio Website - Release Music on Streaming Platforms - School Projects",
   },

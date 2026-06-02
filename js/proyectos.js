@@ -80,10 +80,10 @@ const SOUNDCLOUD_TRACKS = [
     song: "../music/Title_Theme.wav",
   },
   {
-    title: "Bluecloak - Música del superfici",
+    title: "Bluecloak - Música de la superficie",
     link: "https://soundcloud.com/prodbyaav/bluecloakgrass",
     description:
-      "Música del superficie para 'Bluecloak', creando un entorno intenso mientras el jugador enfrenta incontables enemigos en olas.",
+      "Música de la superficie para 'Bluecloak', creando un entorno intenso mientras el jugador enfrenta incontables enemigos en olas.",
     image: "../images/grass_theme.png",
     DAW: "FL Studio",
     song: "../music/Grass_Theme.wav",
@@ -166,7 +166,7 @@ function createProjectCard(repo) {
   const isMusicTrack = Boolean(repo.song);
   const cardHeaderText = repo.language || repo.DAW || "N/A";
   const cardTitle = repo.name || repo.title || "Sin título";
-  const description = repo.description || "No descripcion disponible";
+  const description = repo.description || "No descripción disponible";
   const cardLink = isMusicTrack ? null : repo.html_url || repo.link;
   const cardLinkText = "Ver Repositorio";
 
@@ -367,7 +367,7 @@ function updateTrackButtons() {
     const isPlaying = isCurrentTrack && !audioPlayer.paused;
 
     button.textContent = isPlaying
-      ? "Pausar pista de musica"
+      ? "Pausar pista de música"
       : "Reproducir pista de música";
 
     button.setAttribute(

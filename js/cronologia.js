@@ -6,7 +6,7 @@ const PROGRESS_ENTRIES = [
     time: "2019",
     description:
       "Descubrí la producción musical y comencé a explorar una variedad de instrumentos y a componer música en GarageBand. Este se convirtió en mi punto de partida, donde sentí por primera vez la chispa de mi amorosa pasión por la música.",
-    skills: "Habilidades: GarageBand - Musica",
+    skills: "Habilidades: GarageBand - Música",
   },
   {
     title: "Haciendo Crecer mis Raíces",
@@ -56,7 +56,7 @@ const PROGRESS_ENTRIES = [
     title: "Segundo Año - Fe + Creaciones",
     time: "Primavera de 2026",
     description:
-      "Tomé un curso de ciencia de datos donde aprendí a administrar conjuntos de datos, experimentar con ellos, modificar los valores y crear gráficos con ellos. Tomé un curso de desarrollo de juegos donde aprendí a diseñar y programar un videojuego funcional en un equipo de tres. Aquí es donde comenzamos nuestro proyecto 'Bluecloak', que es un juego independiente tipo 2D rouge lleno de acción e intensidad. También trabajé en la banda sonora del juego en FL Studio. Durante este semestre, tomé un curso de Formación Espiritual, donde me conecté profundamente con Dios y aprendí sobre diferentes culturas y prácticas de otras denominaciones.",
+      "Tomé un curso de ciencia de datos donde aprendí a administrar conjuntos de datos, experimentar con ellos, modificar los valores y crear gráficos con ellos. Tomé un curso de desarrollo de juegos donde aprendí a diseñar y programar un videojuego funcional en un equipo de tres. Aquí es donde comenzamos nuestro proyecto 'Bluecloak', que es un juego independiente tipo roguelike 2D lleno de acción e intensidad. También trabajé en la banda sonora del juego en FL Studio. Durante este semestre, tomé un curso de Formación Espiritual, donde me conecté profundamente con Dios y aprendí sobre diferentes culturas y prácticas de otras denominaciones.",
     skills:
       "Habilidades: FL Studio - C# - Unity - Python - Aprendizaje automático - DataFrames - Análisis de datos - Hojas de cálculo - Gestión de datos - Diseño de sonido - Desarrollo de juegos - Diseño de juegos - Colaboración espiritual - Discipulado - Teología - VSCode - GitLab",
   },

@@ -2,7 +2,7 @@
 
 const GITHUB_PROJECTS = [
   {
-    name: "Medical-Case_Machine-Leaning",
+    name: "Medical-Case_Machine-Learning",
     description:
       "A machine learning project where the program uses the features of the medical conditions to train and make predictions.",
     html_url: "https://github.com/aav-911/Medical-Case_Machine-Leaning",
@@ -36,7 +36,7 @@ const GITHUB_PROJECTS = [
   {
     name: "Air-Traffic_Project",
     description:
-      "An experiment where the program measures and compares the number of passengers per domestic and international flights in San Francisco International Airport.",
+      "An experiment where the program measures and compares the number of passengers on domestic and international flights at San Francisco International Airport.",
     html_url: "https://github.com/aav-911/Air-Traffic_Project",
     language: "Python",
     image: "../images/gfu5.jpg",
@@ -54,7 +54,7 @@ const GAMEDEV_PROJECTS = [
   {
     name: "Coming Soon",
     description:
-      "2D turn-based apocaliptic horror game where players navigate a post-apocalyptic world, face against the undead and raiders as they seek a new home...",
+      "2D turn-based apocalyptic horror game where players navigate a post-apocalyptic world, face the undead and raiders as they seek a new home...",
     image: "../images/blue_gradient.png",
     language: "C#",
   },
@@ -65,7 +65,7 @@ const SOUNDCLOUD_TRACKS = [
     title: "Pollo",
     link: "https://soundcloud.com/prodbyaav/pollo",
     description:
-      "One of my first completed beats I ever made. It all started as a joke when I discovered the chicken SFX, asking others if it'll sound good. And it did. I don't know how I did it, but it worked. And so I finished this beat and I actually don't hate it. I hope you enjoy!",
+      "One of the first completed beats I ever made. It all started as a joke when I discovered the chicken SFX, asking others if it would sound good. And it did. I don't know how I did it, but it worked. And so I finished this beat, and I actually don't hate it. I hope you enjoy!",
     image: "../images/pollo_theme.PNG",
     DAW: "SoundTrap",
     song: "../music/Pollo.wav",
@@ -92,7 +92,7 @@ const SOUNDCLOUD_TRACKS = [
     title: "Bluecloak - Cave Theme",
     link: "https://soundcloud.com/prodbyaav/bluecloakcave",
     description:
-      "Cave theme for 'Bluecloak', creating an upbeat atmoshphere as the player explores the underground depths of the world.",
+      "Cave theme for 'Bluecloak', creating an upbeat atmosphere as the player explores the underground depths of the world.",
     image: "../images/cave_theme.png",
     DAW: "FL Studio",
     song: "../music/Cave_Theme.wav",
