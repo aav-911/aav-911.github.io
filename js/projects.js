@@ -71,6 +71,15 @@ const SOUNDCLOUD_TRACKS = [
     song: "../music/Pollo.wav",
   },
   {
+    title: "Pure in Heart",
+    link: "https://soundcloud.com/prodbyaav/pureinheart",
+    description:
+      "I made this music piece for a school project based on the biblical verse: Matthew 5:8: 'Blessed are the pure in heart, for they will see God'.",
+    image: "../images/aav_logo.png",
+    DAW: "FL Studio",
+    song: "../music/Pure_in_Heart.wav",
+  },
+  {
     title: "Bluecloak - Title Theme",
     link: "https://soundcloud.com/prodbyaav/bluecloaktitle",
     description:

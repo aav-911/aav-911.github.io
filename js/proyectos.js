@@ -71,6 +71,15 @@ const SOUNDCLOUD_TRACKS = [
     song: "../music/Pollo.wav",
   },
   {
+    title: "Puro en el Corazón",
+    link: "https://soundcloud.com/prodbyaav/pureinheart",
+    description:
+      "Hice esta pieza musical para un proyecto escolar basado en el versículo bíblico: Mateo 5:8: 'Bienaventurados los puros de corazón, porque verán a Dios'.",
+    image: "../images/aav_logo.png",
+    DAW: "FL Studio",
+    song: "../music/Pure_in_Heart.wav",
+  },
+  {
     title: "Bluecloak - Música Principal",
     link: "https://soundcloud.com/prodbyaav/bluecloaktitle",
     description:
